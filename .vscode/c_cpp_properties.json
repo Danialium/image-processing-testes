@@ -10,7 +10,8 @@
             "windowsSdkVersion": "10.0.19041.0", // adjust or remove if unknown
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/Program Files (x86)/Windows Kits/10/Include/**"
+                "C:/Program Files (x86)/Windows Kits/10/Include/**",
+                "${workspaceFolder}/external/opencv/build/include"
             ],
             "defines": [
                 "_WINDOWS",

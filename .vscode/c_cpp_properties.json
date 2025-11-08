@@ -1,0 +1,53 @@
+// c_cpp_properties.json - Windows configurations (adjust compilerPath / SDK paths to your installation)
+{
+    "configurations": [
+        {
+            "name": "Windows-MSVC",
+            "intelliSenseMode": "msvc-x64",
+            "compilerPath": "F:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.30.30705/bin/Hostx64/x64/cl.exe", // change to your cl.exe
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "windowsSdkVersion": "10.0.19041.0", // adjust or remove if unknown
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Program Files (x86)/Windows Kits/10/Include/**"
+            ],
+            "defines": [
+                "_WINDOWS",
+                "_UNICODE",
+                "UNICODE"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        },
+        {
+            "name": "Windows-GNU",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "C:/MinGW/bin/g++.exe", // change to your g++/gcc location
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/MinGW/include/**"
+            ],
+            "defines": [
+                "NDEBUG"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "C:/MinGW/include/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}
